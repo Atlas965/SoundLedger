@@ -269,40 +269,23 @@ export default function Home() {
             <div className="lg:col-span-1 flex flex-col gap-6">
               {[
                 {
-                  title: "Live at The Catalyst",
-                  type: "Live Performance",
-                  img: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=600&auto=format&fit=crop",
+                  title: "",
+                  type: "",
+                  img: "",
                 },
                 {
-                  title: "Making of 'Genesis'",
-                  type: "Behind the Scenes",
-                  img: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&auto=format&fit=crop",
+                  title: "",
+                  type: "",
+                  img: "",
                 },
               ].map((vid, i) => (
                 <FadeIn
                   key={i}
                   delay={0.4 + i * 0.2}
-                  className="flex-1 relative glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-white/10"
+                  className="flex-1 relative glass-panel rounded-3xl overflow-hidden group cursor-default border border-white/10"
                 >
-                  <img
-                    src={vid.img}
-                    className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 group-hover:opacity-70 transition-all duration-700"
-                    alt={vid.title}
-                  />
+                  <div className="absolute inset-0 bg-zinc-900/50"></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
-
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
-                    <Play className="w-4 h-4 text-white group-hover:text-black ml-1 fill-current" />
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 p-6">
-                    <p className="text-primary text-xs font-semibold mb-1">
-                      {vid.type}
-                    </p>
-                    <h4 className="text-xl font-bold text-white leading-tight">
-                      {vid.title}
-                    </h4>
-                  </div>
                 </FadeIn>
               ))}
             </div>
