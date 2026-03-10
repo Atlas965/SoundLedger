@@ -1,0 +1,10 @@
+Update artist portrait to feature the logo prominently
+
+Adjust the styling of the artist portrait section in `Home.tsx` to make the SoundLedger logo occupy the entire area of the portrait image, replacing the previous placeholder image.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 2a8e38fd-86fc-4a96-88b9-9f6537b333d5
+Replit-Commit-Checkpoint-Type: full_checkpoint
+Replit-Commit-Event-Id: 3fa468ee-e455-4c39-84fa-66e1434a269d
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/3d51db5c-a80c-4049-966b-c746d62ff927/2a8e38fd-86fc-4a96-88b9-9f6537b333d5/Ej8WR2q
+Replit-Helium-Checkpoint-Created: true
